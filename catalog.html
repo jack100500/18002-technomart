@@ -6,54 +6,62 @@
 </head>
 <body>
 <header class="main-header">
+    <div class="main-header-top">
+        <div class="container">
+            <div class="main-logo">
+                <a href="/"><img src="img/index-logo.png" width="368" height="204" alt="Техномарт"></a>
+            </div>
+            <div class="main-search">
+                <form action="http://echo.htmlacademy.ru" method="get">
+                    <input type="text" name="search" placeholder="Поиск">
+                    <input type="submit" value="">
+                </form>
+            </div>
+            <div class="main-favorite">
+                <a href="#">Закладки: 0</a>
+            </div>
+            <div class="main-shopping-cart main-shopping-cart-full">
+                <a href="#">Корзина: 10</a>
+            </div>
+            <div class="main-order-now">
+                <a href="#">Оформить заказ</a>
+            </div>
+        </div>
+    </div>
     <div class="container">
-        <div class="main-logo">
-            <a href="/"><img src="img/index-logo.png" width="368" height="204" alt="Техномарт"></a>
-        </div>
-        <div class="main-search">
-            <form action="http://echo.htmlacademy.ru" method="get">
-                <input type="text" name="search" placeholder="Поиск">
-                <input type="submit" value="">
-            </form>
-        </div>
-        <div class="main-favorite">
-            <a href="#">Закладки: 0</a>
-        </div>
-        <div class="main-shopping-cart">
-            <a href="#">Корзина: 0</a>
-        </div>
-        <div class="main-order-now">
-            <a href="#">Оформить заказ</a>
-        </div>
-        <div class="main-slogan">
-            <p>Интернет-магазин строительных материалов и инструментов для ремонта</p>
-        </div>
-        <div class="main-feedback">
-            <div class="main-feedback-phone">+7 (821) 555-05-55</div>
-            <div class="main-feedback-address">г. Санкт-Петербург, ул. Б. Конюхова. д.19/8</div>
-        </div>
-        <div class="main-user-block">
-            <div class="main-user-block-info">
-                <a href="#"><span class="main-user-block-info-profile-icon">Равшан Джамшутович</span></a>
-                <a href="#"><span class="main-user-block-info-exit"></span></a>
+        <div class="main-header-bottom">
+            <div class="main-slogan">
+                <p>Интернет-магазин строительных материалов и инструментов для ремонта</p>
             </div>
-            <div class="main-user-block-menu">
-                <a href="#">Мои заказы</a>
-                <span class="main-user-block-menu-separator">.</span>
-                <a href="#">Личный кабинет</a>
+            <div class="main-feedback">
+                <div class="main-feedback-phone">+7 (821) 555-05-55</div>
+                <div class="main-feedback-address">г. Санкт-Петербург, ул. Б. Конюхова. д.19/8</div>
+            </div>
+            <div class="main-user-block">
+                <div class="main-user-block-info">
+                    <a href="#"><span class="main-user-block-info-profile-icon">Равшан Джамшутович</span></a>
+                    <a href="#"><span class="main-user-block-info-exit"></span></a>
+                </div>
+                <div class="main-user-block-menu">
+                    <a href="#">Мои заказы</a>
+                    <span class="main-user-block-menu-separator">.</span>
+                    <a href="#">Личный кабинет</a>
+                </div>
             </div>
         </div>
-        <nav class="main-navigation">
-            <ul class="main-navigation-list">
-                <li><a class="active" href="#">Главная</a></li>
-                <li><a href="#">Компания</a></li>
-                <li><a href="#">Каталог</a></li>
-                <li><a href="#">Новости</a></li>
-                <li><a href="#">Спецпредложения</a></li>
-                <li><a href="#">Доставка</a></li>
-                <li><a href="#">Контакты</a></li>
-            </ul>
-        </nav>
+        <div class="main-header-navigation">
+            <nav class="main-navigation">
+                <ul class="main-navigation-list">
+                    <li><a class="active" href="#">Главная</a></li>
+                    <li><a href="#">Компания</a></li>
+                    <li><a href="#">Каталог</a></li>
+                    <li><a href="#">Новости</a></li>
+                    <li><a href="#">Спецпредложения</a></li>
+                    <li><a href="#">Доставка</a></li>
+                    <li><a href="#">Контакты</a></li>
+                </ul>
+            </nav>
+        </div>
     </div>
 </header>
 <main>
@@ -61,8 +69,8 @@
         <div class="content-block-breadcrumbs">
             <ul class="content-block-breadcrumbs-list">
                 <li class="home"></li>
-                <li>Каталог</li>
-                <li>Инструмент</li>
+                <li><a href="#">>Каталог</a></li>
+                <li><a href="#">Инструмент</a></li>
                 <li>Перфораторы</li>
             </ul>
         </div>
@@ -94,38 +102,26 @@
                     <div class="content-block-menu-separator"></div>
                     <section class="content-block-menu-brands">
                         <h2 class="content-block-menu-brands-title">Производители:</h2>
-                        <ul class="content-block-menu-brands-list">
-                            <li>
-                                <div class="form-control">
-                                    <input type="checkbox" name="brands_1" id="brands_1" checked>
-                                    <label for="brands_1">Bosch</label>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="form-control">
-                                    <input type="checkbox" name="brands_2" id="brands_2">
-                                    <label for="brands_2">Интерскол</label>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="form-control">
-                                    <input type="checkbox" name="brands_3" id="brands_3" checked>
-                                    <label for="brands_3">Makita</label>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="form-control">
-                                    <input type="checkbox" name="brands_4" id="brands_4">
-                                    <label for="brands_4">Dewalt</label>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="form-control">
-                                    <input type="checkbox" name="brands_5" id="brands_5">
-                                    <label for="brands_5">Hitachi</label>
-                                </div>
-                            </li>
-                        </ul>
+                        <div class="form-control">
+                            <input type="checkbox" name="brands_1" id="brands_1" checked>
+                            <label for="brands_1">Bosch</label>
+                        </div>
+                        <div class="form-control">
+                            <input type="checkbox" name="brands_2" id="brands_2">
+                            <label for="brands_2">Интерскол</label>
+                        </div>
+                        <div class="form-control">
+                            <input type="checkbox" name="brands_3" id="brands_3" checked>
+                            <label for="brands_3">Makita</label>
+                        </div>
+                        <div class="form-control">
+                            <input type="checkbox" name="brands_4" id="brands_4">
+                            <label for="brands_4">Dewalt</label>
+                        </div>
+                        <div class="form-control">
+                            <input type="checkbox" name="brands_5" id="brands_5">
+                            <label for="brands_5">Hitachi</label>
+                        </div>
                     </section>
                     <section class="content-block-menu-types">
                         <h2 class="content-block-menu-types-title">Питание:</h2>
@@ -160,110 +156,110 @@
                         <a class="sort-by-desc"><img src="img/filter-sort-desc.png" alt=""></a>
                     </div>
                 </div>
-                <div class="content-block-market-items">
-                    <article class="content-block-market-items-item">
-                        <div class="content-block-market-items-item-image">
+                <div class="market-items">
+                    <article class="market-items-item">
+                        <div class="market-items-item-image">
                             <img src="img/item-image.png" alt="">
                         </div>
-                        <div class="content-block-market-items-item-description">
+                        <div class="market-items-item-description">
                             <p>Перфоратор Bosch<br>BFG 3000</p>
                         </div>
-                        <div class="content-block-market-items-item-buy">
-                            <p class="content-block-market-items-item-buy-price-old">22 500 Р.</p>
+                        <div class="market-items-item-buy">
+                            <p class="market-items-item-buy-price-old">22 500 Р.</p>
                             <a class="btn" href="#">15 500 Р.</a>
                         </div>
                     </article>
-                    <article class="content-block-market-items-item">
-                        <div class="content-block-market-items-item-image">
+                    <article class="market-items-item">
+                        <div class="market-items-item-image">
                             <img src="img/item-image.png" alt="">
                         </div>
-                        <div class="content-block-market-items-item-description">
+                        <div class="market-items-item-description">
                             <p>Перфоратор Bosch<br>BFG 6000</p>
                         </div>
-                        <div class="content-block-market-items-item-buy">
-                            <p class="content-block-market-items-item-buy-price-old">30 500 Р.</p>
+                        <div class="market-items-item-buy">
+                            <p class="market-items-item-buy-price-old">30 500 Р.</p>
                             <a class="btn" href="#">25 500 Р.</a>
                         </div>
                     </article>
-                    <article class="content-block-market-items-item content-block-market-items-item-new">
-                        <div class="content-block-market-items-item-cart">
+                    <article class="market-items-item market-items-item-new">
+                        <div class="market-items-item-cart">
                             <a class="btn btn-market-buy" href="">Купить</a>
                             <a class="btn btn-market-favorite" href="">В закладки</a>
                         </div>
-                        <div class="content-block-market-items-item-description">
+                        <div class="market-items-item-description">
                             <p>Перфоратор Bosch<br>BFG 2000</p>
                         </div>
-                        <div class="content-block-market-items-item-buy">
+                        <div class="market-items-item-buy">
                             <a class="btn" href="#">15 500 Р.</a>
                         </div>
                     </article>
-                    <article class="content-block-market-items-item">
-                        <div class="content-block-market-items-item-image">
+                    <article class="market-items-item">
+                        <div class="market-items-item-image">
                             <img src="img/item-image.png" alt="">
                         </div>
-                        <div class="content-block-market-items-item-description">
+                        <div class="market-items-item-description">
                             <p>Перфоратор Bosch<br>BFG 3000</p>
                         </div>
-                        <div class="content-block-market-items-item-buy">
-                            <p class="content-block-market-items-item-buy-price-old">22 500 Р.</p>
+                        <div class="market-items-item-buy">
+                            <p class="market-items-item-buy-price-old">22 500 Р.</p>
                             <a class="btn" href="#">15 500 Р.</a>
                         </div>
                     </article>
-                    <article class="content-block-market-items-item content-block-market-items-item-new">
-                        <div class="content-block-market-items-item-image">
+                    <article class="market-items-item market-items-item-new">
+                        <div class="market-items-item-image">
                             <img src="img/item-image.png" alt="">
                         </div>
-                        <div class="content-block-market-items-item-description">
+                        <div class="market-items-item-description">
                             <p>Перфоратор Bosch<br>BFG 6000</p>
                         </div>
-                        <div class="content-block-market-items-item-buy">
-                            <p class="content-block-market-items-item-buy-price-old">30 500 Р.</p>
+                        <div class="market-items-item-buy">
+                            <p class="market-items-item-buy-price-old">30 500 Р.</p>
                             <a class="btn" href="#">25 500 Р.</a>
                         </div>
                     </article>
-                    <article class="content-block-market-items-item">
-                        <div class="content-block-market-items-item-image">
+                    <article class="market-items-item">
+                        <div class="market-items-item-image">
                             <img src="img/item-image.png" alt="">
                         </div>
-                        <div class="content-block-market-items-item-description">
+                        <div class="market-items-item-description">
                             <p>Перфоратор Bosch<br>BFG 2000</p>
                         </div>
-                        <div class="content-block-market-items-item-buy">
+                        <div class="market-items-item-buy">
                             <a class="btn" href="#">12 500 Р.</a>
                         </div>
                     </article>
-                    <article class="content-block-market-items-item content-block-market-items-item-new">
-                        <div class="content-block-market-items-item-image">
+                    <article class="market-items-item market-items-item-new">
+                        <div class="market-items-item-image">
                             <img src="img/item-image.png" alt="">
                         </div>
-                        <div class="content-block-market-items-item-description">
+                        <div class="market-items-item-description">
                             <p>Перфоратор Bosch<br>BFG 3000</p>
                         </div>
-                        <div class="content-block-market-items-item-buy">
-                            <p class="content-block-market-items-item-buy-price-old">22 500 Р.</p>
+                        <div class="market-items-item-buy">
+                            <p class="market-items-item-buy-price-old">22 500 Р.</p>
                             <a class="btn" href="#">15 500 Р.</a>
                         </div>
                     </article>
-                    <article class="content-block-market-items-item">
-                        <div class="content-block-market-items-item-image">
+                    <article class="market-items-item">
+                        <div class="market-items-item-image">
                             <img src="img/item-image.png" alt="">
                         </div>
-                        <div class="content-block-market-items-item-description">
+                        <div class="market-items-item-description">
                             <p>Перфоратор Bosch<br>BFG 6000</p>
                         </div>
-                        <div class="content-block-market-items-item-buy">
-                            <p class="content-block-market-items-item-buy-price-old">30 500 Р.</p>
+                        <div class="market-items-item-buy">
+                            <p class="market-items-item-buy-price-old">30 500 Р.</p>
                             <a class="btn" href="#">25 500 Р.</a>
                         </div>
                     </article>
-                    <article class="content-block-market-items-item">
-                        <div class="content-block-market-items-item-image">
+                    <article class="market-items-item">
+                        <div class="market-items-item-image">
                             <img src="img/item-image.png" alt="">
                         </div>
-                        <div class="content-block-market-items-item-description">
+                        <div class="market-items-item-description">
                             <p>Перфоратор Bosch<br>BFG 2000</p>
                         </div>
-                        <div class="content-block-market-items-item-buy">
+                        <div class="market-items-item-buy">
                             <a class="btn" href="#">12 500 Р.</a>
                         </div>
                     </article>
