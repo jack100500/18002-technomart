@@ -1,0 +1,27 @@
+body {
+    font-size: 18px;
+    line-height: 20px;
+    color: #000000;
+    font-weight: bold;
+    font-family: "PT Sans Bold", sans-serif;
+}
+
+h1.content-block-promo-box-title {
+    font-size: 24px;
+    line-height: 30px;
+    color: #ffffff;
+    font-weight: 600;
+    font-family: "Gill Sans SemiBold Italic", sans-serif;
+}
+
+h2.content-block-popular-goods-header-title {
+    font-size: 30px;
+    line-height: 30px;
+    color: #32425c;
+    font-weight: 600;
+    font-family: "Gill Sans SemiBold Italic", sans-serif;
+}
+
+.content-block-promo-slider {
+    background: no-repeat #77685b url("../img/offer-slider-perforator.jpg");
+}
