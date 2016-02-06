@@ -7,37 +7,37 @@
     <link href="css/style.css" rel="stylesheet">
 </head>
 <body>
-<header class="main-header">
-    <div class="main-header-top">
+<header>
+    <div class="main-header-panel">
         <div class="container">
-            <div class="main-logo">
-                <a class="header-logo" href="/">Техномарт</a>
-            </div>
-            <div class="main-search">
-                <form action="http://echo.htmlacademy.ru" method="get">
-                    <input type="text" name="search" placeholder="Поиск">
-                    <input type="submit" value="">
-                </form>
-            </div>
-            <div class="main-favorite">
-                <a href="#">Закладки: 0</a>
-            </div>
-            <div class="main-shopping-cart main-shopping-cart-full">
-                <a href="#">Корзина: 10</a>
-            </div>
-            <div class="main-order-now">
-                <a href="#">Оформить заказ</a>
+            <div class="main-header-top clear-fix">
+                <div class="main-logo">
+                    <a class="header-logo" href="/">Техномарт</a>
+                </div>
+                <div class="main-search">
+                    <form action="http://echo.htmlacademy.ru" method="get">
+                        <input type="text" name="search" placeholder="Поиск">
+                        <input type="submit" value="">
+                    </form>
+                </div>
+                <div class="main-favorite">
+                    <a href="#">Закладки: 0</a>
+                </div>
+                <div class="main-shopping-cart main-shopping-cart-full">
+                    <a href="#">Корзина: 10</a>
+                </div>
+                <div class="main-order-now">
+                    <a href="#">Оформить заказ</a>
+                </div>
             </div>
         </div>
     </div>
     <div class="container">
-        <div class="main-header-bottom">
-            <div class="main-slogan">
-                <p>Интернет-магазин строительных материалов и инструментов для ремонта</p>
-            </div>
+        <div class="main-header-bottom clear-fix">
+            <p class="main-slogan">Интернет-магазин строительных материалов и инструментов для ремонта</p>
             <div class="main-feedback">
                 <div class="main-feedback-phone">+7 (821) 555-05-55</div>
-                <div class="main-feedback-address">г. Санкт-Петербург, ул. Б. Конюхова. д.19/8</div>
+                <p class="main-feedback-address">г. Санкт-Петербург, ул. Б. Конюхова. д.19/8</p>
             </div>
             <div class="main-user-block">
                 <div class="main-user-block-info">
@@ -54,9 +54,9 @@
         <div class="main-header-navigation">
             <nav class="main-navigation">
                 <ul class="main-navigation-list">
-                    <li><a class="active" href="#">Главная</a></li>
+                    <li><a class="active" href="index.html">Главная</a></li>
                     <li><a href="#">Компания</a></li>
-                    <li><a href="#">Каталог</a></li>
+                    <li><a href="catalog.html">Каталог</a></li>
                     <li><a href="#">Новости</a></li>
                     <li><a href="#">Спецпредложения</a></li>
                     <li><a href="#">Доставка</a></li>
@@ -68,42 +68,34 @@
 </header>
 <main>
     <div class="container">
-        <div class="content-block-breadcrumbs">
-            <ul class="content-block-breadcrumbs-list">
-                <li class="home"></li>
-                <li><a href="#">>Каталог</a></li>
-                <li><a href="#">Инструмент</a></li>
-                <li>Перфораторы</li>
-            </ul>
-        </div>
-        <div class="content-block-catalog">
-            <div class="content-block-catalog-title">
-                <span>Перфораторы</span>
-            </div>
-            <div class="content-block-menu">
+         <div class="block-breadcrumbs">
+             <ul class="breadcrumbs-list">
+                 <li class="home"></li>
+                 <li><a href="#">Каталог</a></li>
+                 <li><a href="#">Инструмент</a></li>
+                 <li>Перфораторы</li>
+             </ul>
+         </div>
+        <h1 class="catalog-title">Перфораторы</h1>
+        <div class="block-catalog clear-fix">
+            <div class="block-menu">
                 <form action="http://echo.htmlacademy.ru" method="post">
-                    <div class="content-block-menu-header">
-                        <span>Фильтр:</span>
-                    </div>
-                    <section class="content-block-menu-price">
-                        <h2 class="content-block-menu-price-title">Цена:</h2>
-                        <div class="content-block-menu-price-widget">
-                            <div class="content-block-menu-price-widget-bar">
-
-                            </div>
-                            <div class="content-block-menu-price-widget-range">
-                                <div class="form-control">
-                                    <input type="text" name="price_from" placeholder="0">
-                                </div>
-                                <div class="form-control">
-                                    <input type="text" name="price_to" placeholder="30000">
-                                </div>
+                    <p class="block-menu-header yellow-panel">Фильтр:</p>
+                    <h2 class="price-widget-title">Цена:</h2>
+                    <section class="price-widget clear-fix">
+                        <div class="price-widget-slider">
+                            <div class="price-widget-bar yellow-panel">
+                                *** SLIDER ***
                             </div>
                         </div>
+                        <div class="price-widget-range clear-fix">
+                            <input class="price-widget-range-min" type="text" name="price_min" placeholder="0">
+                            <span class="price-widget-range-separator">-</span>
+                            <input class="price-widget-range-max" type="text" name="price_max" placeholder="30000">
+                        </div>
                     </section>
-                    <div class="content-block-menu-separator"></div>
-                    <section class="content-block-menu-brands">
-                        <h2 class="content-block-menu-brands-title">Производители:</h2>
+                    <section class="block-menu-brands clear-fix">
+                        <h3 class="block-menu-brands-title">Производители:</h3>
                         <div class="form-control">
                             <input type="checkbox" name="brands_1" id="brands_1" checked>
                             <label for="brands_1">Bosch</label>
@@ -125,40 +117,36 @@
                             <label for="brands_5">Hitachi</label>
                         </div>
                     </section>
-                    <section class="content-block-menu-types">
-                        <h2 class="content-block-menu-types-title">Питание:</h2>
-                        <ul class="content-block-menu-types-list">
+                    <section class="block-menu-types">
+                        <h2 class="block-menu-types-title">Питание:</h2>
+                        <ul class="block-menu-types-list">
                             <li>
-                                <div class="form-control">
-                                    <input type="radio" name="type" id="type_1" checked>
-                                    <label for="type_1">Аккумуляторные</label>
-                                </div>
+                                <input type="radio" name="type" id="type_1" checked>
+                                <label for="type_1">Аккумуляторные</label>
                             </li>
                             <li>
-                                <div class="form-control">
-                                    <input type="radio" name="type" id="type_2">
-                                    <label for="type_2">Сетевые</label>
-                                </div>
+                                <input type="radio" name="type" id="type_2">
+                                <label for="type_2">Сетевые</label>
                             </li>
                         </ul>
                     </section>
-                    <div class="content-block-menu-submit">
+                    <div class="block-menu-submit">
                         <input class="btn btn-submit" type="submit" value="Показать">
                     </div>
                 </form>
             </div>
-            <div class="content-block-market">
-                <div class="content-block-market-header">
-                    <div class="content-block-market-header-title"><span>Сортировка:</span></div>
-                    <div class="content-block-market-header-filter-price"><a href="#">По цене</a></div>
-                    <div class="content-block-market-header-filter-type"><a href="#">По типу</a></div>
-                    <div class="content-block-market-header-filter-functionality"><a href="#">По функционалу</a></div>
-                    <div class="content-block-market-header-filter-order">
-                        <a class="sort-by-asc"><img src="img/filter-sort-asc.png" alt=""></a>
-                        <a class="sort-by-desc"><img src="img/filter-sort-desc.png" alt=""></a>
+            <div class="block-market clear-fix">
+                <div class="block-header-filter yellow-panel clear-fix">
+                    <span>Сортировка:</span>
+                    <div class="filter-parameters">
+                        <a class="block-header-filter-price active" href="#">По цене</a>
+                        <a class="block-header-filter-type" href="#">По типу</a>
+                        <a class="block-header-filter-functionality" href="#">По функционалу</a>
+                        <a class="block-header-filter-order-asc" href="#">&lt;</a>
+                        <a class="block-header-filter-order-desc" href="#">&gt;</a>
                     </div>
                 </div>
-                <div class="market-items">
+                <div class="market-items clear-fix">
                     <article class="market-items-item">
                         <div class="market-items-item-image">
                             <img src="img/catalog-item-bfg-3000.jpg" alt="">
@@ -276,7 +264,9 @@
                 </div>
             </div>
         </div>
-        <div class="content-block-little-promo">
+    </div>
+    <div class="content-block-little-promo clear-fix">
+        <div class="container">
             <h2 class="content-block-little-promo-title">Пара слов о перфораторах</h2>
             <p>Перфоратор — универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в
                 кирпиче,
@@ -288,49 +278,53 @@
         </div>
     </div>
 </main>
-<footer class="main-footer">
-    <div class="container">
-        <div class="footer-level-top">
-            <div class="footer-level-one-logo">
-                <a class="footer-logo" href="/">Техномарт</a>
-            </div>
-            <nav class="footer-level-one-navigation">
-                <ul class="footer-level-one-navigation-list">
+<footer class="main-footer clear-fix">
+    <div class="footer-level-top clear-fix">
+        <div class="container">
+            <a class="footer-logo" href="/">Техномарт</a>
+            <div class="footer-level-top-navigation">
+                <ul class="footer-level-top-navigation-list">
                     <li><a href="#">Компания</a></li>
                     <li><a href="#">Новости</a></li>
                     <li><a href="#">Каталог</a></li>
                     <li><a href="#">Доставка</a></li>
                     <li><a href="#">Контакты</a></li>
                 </ul>
-            </nav>
-            <div class="footer-level-one-address">
+            </div>
+        </div>
+    </div>
+    <div class="footer-level-middle clear-fix">
+        <div class="container">
+            <div class="footer-level-middle-address">
                 <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
                 <p>+7 (495) 555-05-55</p>
             </div>
-            <nav class="footer-level-one-categories">
-                <ul class="footer-level-one-categories-list">
+            <div class="footer-level-middle-categories">
+                <ul class="footer-level-middle-categories-list">
                     <li><a href="#">Материалы</a></li>
                     <li><a href="#">Техника</a></li>
                     <li><a href="#">Инструмент</a></li>
                     <li><a href="#">Спецпредложения</a></li>
                 </ul>
-            </nav>
+            </div>
         </div>
-        <div class="footer-level-bottom">
-            <div class="footer-level-two-copyright">
+    </div>
+    <div class="footer-level-bottom clear-fix">
+        <div class="container">
+            <div class="footer-level-bottom-copyright">
                 <p>&copy; 2010-2016 Компания "Техномарт"</p>
                 <p>Все права защищены</p>
             </div>
-            <div class="footer-level-two-social-networks">
+            <div class="footer-level-bottom-social-networks">
                 <a class="btn btn-vk" href="#"><img src="img/vk.png" alt=""></a>
                 <a class="btn btn-facebook" href="#"><img src="img/facebook.png" alt=""></a>
                 <a class="btn btn-instagram" href="#"><img src="img/instagram.png" alt=""></a>
             </div>
-            <div class="footer-level-two-feedback">
+            <div class="footer-level-bottom-feedback">
                 <p>Обратная связь:</p>
                 <a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
             </div>
-            <div class="footer-level-two-maintainer">
+            <div class="footer-level-bottom-maintainer">
                 <p>Разработано -</p>
                 <a href="#">htmlacademy.ru</a>
             </div>
