@@ -2,8 +2,7 @@
 <html lang="ru">
 <head>
     <meta charset="utf-8">
-    <link href="http://fonts.googleapis.com/css?family=Cuprum:400,400italic,700,700italic&amp;subset=latin,cyrillic" rel="stylesheet" type="text/css">
-    <link href="http://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=latin,cyrillic" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700|Cuprum:400,400italic,700italic,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
     <title>HTML Academy: Техномарт</title>
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
@@ -17,9 +16,8 @@
             </div>
             <div class="header-top-search">
                 <form action="http://echo.htmlacademy.ru" method="get">
-                    <label for="search"></label>
                     <input id="search" type="text" name="search" placeholder="Поиск:">
-                    <input type="submit" value="">
+                    <label for="search"></label>
                 </form>
             </div>
             <div class="header-top-favorite">
@@ -246,21 +244,21 @@
                             <h2 class="services-description-title">Доставка</h2>
                             <div class="services-description-text">
                                 <p>Мы с одовольствием доставим ваш товар прямо к вашему подьезду совершенно бесплатно!
-                                    Ведь мы неплохо заработаем поднимая его на ваш этаж.</p>
+                                    <br>Ведь мы неплохо заработаем,<br> поднимая его на ваш этаж.</p>
                             </div>
                         </section>
                         <section class="service-details service-details-warranty">
                             <h2 class="services-description-title">Гарантия</h2>
                             <div class="services-description-text">
                                 <p>Мы с одовольствием доставим ваш товар прямо к вашему подьезду совершенно бесплатно!
-                                    Ведь мы неплохо заработаем поднимая его на ваш этаж.</p>
+                                    <br>Ведь мы неплохо заработаем,<br> поднимая его на ваш этаж.</p>
                             </div>
                         </section>
                         <section class="service-details service-details-credit">
                             <h2 class="services-description-title">Кредит</h2>
                             <div class="services-description-text">
                                 <p>Мы с одовольствием доставим ваш товар прямо к вашему подьезду совершенно бесплатно!
-                                    Ведь мы неплохо заработаем поднимая его на ваш этаж.</p>
+                                    <br>Ведь мы неплохо заработаем,<br> поднимая его на ваш этаж.</p>
                             </div>
                         </section>
                     </div>
@@ -276,7 +274,7 @@
                     <p>Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и строительства не
                         оставит
                         равнодушными любителей сэкомномть на гастарбайтерах.</p>
-                    <p>Мы можем доставить товар в самые отдаленные точки России! Техномарт работает со многими
+                    <p>Мы можем доставить товар в самые отдаленные точки России!<br> Техномарт работает со многими
                         транспортными
                         компаниями:</p>
                 </div>
@@ -339,9 +337,9 @@
                 <p>Все права защищены</p>
             </div>
             <div class="footer-panel-social">
-                <a class="footer-social-btn footer-social-vk" href="#"><img src="img/vk.png" alt=""></a>
-                <a class="footer-social-btn footer-social-facebook" href="#"><img src="img/facebook.png" alt=""></a>
-                <a class="footer-social-btn footer-social-instagram" href="#"><img src="img/instagram.png" alt=""></a>
+                <a class="footer-social-btn footer-social-vk" href="#"></a>
+                <a class="footer-social-btn footer-social-fb" href="#"></a>
+                <a class="footer-social-btn footer-social-in" href="#"></a>
             </div>
             <div class="footer-panel-feedback">
                 <p>Обратная связь:</p>
@@ -354,5 +352,37 @@
         </div>
     </div>
 </footer>
+<div class="map container">
+    <noscript>
+        <figure>
+            <img src="img/map.jpg" width="940" height="447" alt="Мы на карте">
+        </figure>
+    </noscript>
+    <div class="map-script"></div>
+    <a href="#" class="map-close"></a>
+</div>
+<div class="feedback container show-block">
+    <a href="#" class="feedback-close"></a>
+    <form action="/feedback" method="post">
+        <div class="feedback-userdata">
+            <div class="feedback-block clearfix">
+                <div class="feedback-left-column">
+                    <label class="feedback-data" for="feedback-login">Ваше имя:</label>
+                    <input type="text" name="login" id="feedback-login" placeholder="Представьтесь, пожалуйста">
+                </div>
+                <div class="feedback-right-column">
+                    <label class="feedback-data" for="feedback-email">Ваш e-mail:</label>
+                    <input type="email" name="email" id="feedback-email" placeholder="Для отправки ответа" required="">
+                </div>
+            </div>
+            <label class="feedback-data" for="feedback-textarea">Текст письма:</label>
+            <textarea name="text" id="feedback-textarea" placeholder="В свободной форме" required="" rows="5"></textarea>
+        </div>
+        <div class="feedback-block-buttons">
+            <button type="submit" class="feedback-btn">Отправить</button>
+            <a href="#" class="feedback-btn feedback-cancel">Отмена</a>
+        </div>
+    </form>
+</div>
 </body>
 </html>
