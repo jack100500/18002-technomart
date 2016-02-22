@@ -533,6 +533,10 @@ header.catalog-header .header-middle-user {
     text-decoration: none;
 }
 
+.header-user-info-profile {
+    width: 200px;
+}
+
 .header-user-info {
     position: relative;
     display: block;
@@ -1771,7 +1775,7 @@ h1.catalog-title {
     top: 0;
     left: 0;
     width: 218px;
-    height: 124px;
+    height: 133px;
     padding: 40px 0;
     background-color: #fff;
 }
@@ -1795,10 +1799,11 @@ h1.catalog-title {
     position: relative;
     display: block;
     margin: 0 auto;
+    margin-top: 5px;
     text-align: center;
-    width: 135px;
-    padding-top: 12px;
-    padding-bottom: 12px;
+    width: 133px;
+    padding-top: 9px;
+    padding-bottom: 8px;
     background-color: #63a63e;
     margin-bottom: 7px;
     border-radius: 5px;
@@ -1808,10 +1813,12 @@ h1.catalog-title {
 .catalog-item-actions .bookmark {
     display: block;
     margin: 0 auto;
+    margin-left: 41px;
     text-align: center;
-    width: 129px;
-    padding-top: 9px;
-    padding-bottom: 9px;
+    width: 135px;
+    padding-top: 6px;
+    padding-left: 0px;
+    padding-bottom: 6px;
     border-radius: 5px;
     border: solid 3px #63a63e;
     background: white;
