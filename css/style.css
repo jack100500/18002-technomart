@@ -796,6 +796,13 @@ header.catalog-header .header-middle-user {
     text-transform: uppercase;
 }
 
+.form-control ~ h3 {
+    padding-top: 19.5px;
+    border-top-style: solid;
+    border-top-width: 2px;
+    border-top-color: #e5e5e5;
+}
+
 .catalog-paginator span {
     color: #ffffff;
 }
