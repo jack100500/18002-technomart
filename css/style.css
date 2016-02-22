@@ -533,6 +533,10 @@ header.catalog-header .header-middle-user {
     font-weight: 400;
     color: #000000;
     text-decoration: none;
+    width: 200px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
 }
 
 .header-user-info-profile {
@@ -2641,6 +2645,8 @@ footer a {
     left: 50%;
     width: 620px;
     padding-top: 48px;
+    padding-left: 0;
+    padding-right: 0;
     margin-top: -250px;
     margin-left: -300px;
     border-top: solid 7px #ee3643;
@@ -2716,6 +2722,14 @@ footer a {
     margin-bottom: 9px;
 }
 
+.feedback-data {
+    font-family: "Cuprum",sans-serif,Arial;
+    font-size: 18px;
+    line-height: 18px;
+    font-weight: 400;
+    color: #000;
+}
+
 .feedback-block input {
     width: 202px;
     padding-top: 9.5px;
@@ -2727,9 +2741,9 @@ footer a {
 
 .feedback textarea,
 .feedback input {
+    margin-top: 9px;
     font-family: "Cuprum",sans-serif,Arial;
     font-size: 14px;
-    color: #ffffff;
 }
 
 textarea {
@@ -2815,6 +2829,7 @@ textarea:focus,
 .map {
     display: none;
     position: fixed;
+    padding: 0;
     top: 50%;
     left: 50%;
     width: 940px;
