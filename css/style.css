@@ -64,6 +64,7 @@
 }
 
 body {
+    min-width: 940px;
     font-size: 18px;
     line-height: 20px;
     color: #000000;
@@ -241,7 +242,7 @@ input[type="search"]:active ~ label::before {
 }
 
 .container {
-    width: 941px;
+    width: 940px;
     margin: 0 auto;
 }
 
@@ -256,9 +257,10 @@ header {
     padding-bottom: 60px;
 }
 
-header.main-header {
+header.main-header,
+header.catalog-header {
     height: 320px;
-    margin-bottom: 20px;
+    margin-bottom: 59px;
 }
 
 .header-top-panel {
@@ -398,16 +400,16 @@ header.main-header {
 
 .header-top-cart-full,
 .header-top-cart-full a {
-    width:149px;
+    width: 148px;
     height: 42px;
     background-color: #ee3643;
 }
 
-.header-top-cart-full::before {
+.header-top-cart-full a::before {
     color: #f3737c;
 }
 
-.header-top-cart-full:active {
+.header-top-cart-full a:active {
     background-color: #ba2732;
 }
 
@@ -506,8 +508,16 @@ header.main-header {
 }
 
 .header-middle-user {
-    width: 285px;
+    width: 280px;
     float: right;
+}
+
+header.catalog-header {
+    margin-bottom: 20px;
+}
+
+header.catalog-header .header-middle-user {
+    width: 300px;
 }
 
 .header-middle-user a {
@@ -534,7 +544,7 @@ header.main-header {
 
 .header-user-info::before {
     position: absolute;
-    top: 12px;
+    top: 10px;
     left: 14px;
     font-size: 18px;
     font-family: "symbols-technomart";
@@ -599,14 +609,14 @@ header.main-header {
 }
 
 .header-user-account a:last-child {
-    margin-left: 38px;
+    margin-left: 33px;
 }
 
 .header-user-account a:last-child::before {
     opacity: 1;
     position: absolute;
-    top: 7px;
-    left: -16px;
+    top: 5px;
+    left: -18px;
     width: 5px;
     height: 5px;
     background-color: #32425c;
@@ -762,6 +772,8 @@ header.main-header {
     color: #000000;
     text-decoration: none;
     text-transform: uppercase;
+    margin: 0;
+    padding: 0;
 }
 
 .catalog-filter-column h3 {
@@ -787,6 +799,10 @@ header.main-header {
     text-decoration: none;
     text-transform: uppercase;
     cursor: pointer;
+}
+
+.catalog-filter-column .form-control {
+    margin-bottom: 17px;
 }
 
 input[type="checkbox"]:disabled + label,
@@ -834,6 +850,8 @@ input[type="radio"]:disabled + label {
 
 .breadcrumbs {
     position: relative;
+    padding: 0;
+    margin: 0;
     margin-left: 15px;
     margin-bottom: 22.5px;
     font-size: 0;
@@ -866,8 +884,8 @@ input[type="radio"]:disabled + label {
 
 .breadcrumbs li::before {
     position: absolute;
-    top: 3px;
-    left: -22px;
+    top: 0px;
+    left: -24px;
     font-size: 12px;
     font-family: "symbols-technomart";
     font-style: normal;
@@ -913,7 +931,7 @@ input[type="radio"]:disabled + label {
 .catalog-options {
     padding-top: 10px;
     padding-bottom: 10px;
-    margin-bottom: 19px;
+    margin-bottom: 16px;
     font-size: 0;
     background-color: #f7f3ec;
     border-radius: 5px;
@@ -937,6 +955,7 @@ input[type="radio"]:disabled + label {
 }
 
 .catalog-options-price {
+    margin-left: 18px;
     margin-right: 70px;
 }
 
@@ -972,8 +991,8 @@ input[type="radio"]:disabled + label {
 
 .catalog-up-arrow::before {
     position: absolute;
-    top: -7px;
-    left: 0;
+    top: -2px;
+    left: 7px;
     font-size: 30px;
     font-family: "symbols-technomart";
     font-style: normal;
@@ -994,8 +1013,8 @@ input[type="radio"]:disabled + label {
 
 .catalog-down-arrow::before {
     position: absolute;
-    top: -7px;
-    left: 40px;
+    top: 0px;
+    left: 38px;
     font-size: 30px;
     font-family: "symbols-technomart";
     font-style: normal;
@@ -1026,8 +1045,8 @@ input[type="radio"]:disabled + label {
 
 .catalog-filter-controls {
     position: relative;
-    height: 41px;
-    padding-top: 39px;
+    height: 81px;
+    padding-top: 32px;
     padding-left: 20px;
     padding-right: 20px;
     margin-bottom: 9px;
@@ -1069,7 +1088,7 @@ input[type="radio"]:disabled + label {
 .catalog-scale-toggle::before {
     position: absolute;
     top: 7px;
-    left: 7.5px;
+    left: 6.5px;
     width: 5px;
     height: 5px;
     border-radius: 50%;
@@ -1078,12 +1097,12 @@ input[type="radio"]:disabled + label {
 }
 
 .catalog-min-toggle {
-    top: 30px;
+    top: 24px;
 }
 
 .catalog-max-toggle {
-    top: 30px;
-    left: 150px;
+    top: 23px;
+    left: 159px;
 }
 
 .catalog-range-filter span,
@@ -1108,8 +1127,8 @@ input[type="radio"]:disabled + label {
     margin-left: 8px;
 }
 
-.catalog-filter-title + label {
-    margin-top: 18px;
+.form-control + .catalog-filter-title {
+    margin-top: 36px;
 }
 
 .catalog-filter-column input[type="radio"],
@@ -1172,11 +1191,11 @@ input[type="checkbox"] ~ h3 {
 }
 
 .filter-btn {
-    padding-top: 11.5px;
+    padding-top: 10.5px;
     padding-bottom: 10.5px;
     padding-left: 38px;
     padding-right: 38px;
-    margin-top: 55px;
+    margin-top: 62px;
     border-radius: 5px;
     border-color: #e5e5e5;
     border-width: 1px;
@@ -1184,6 +1203,15 @@ input[type="checkbox"] ~ h3 {
     outline: none;
     background-color: #ffffff;
     cursor: pointer;
+    height: 37px;
+    width: 140px;
+    font-family: "Cuprum",sans-serif,Arial;
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: 400;
+    color: #000000;
+    text-transform: uppercase;
+    text-decoration: none;
 }
 
 .filter-btn:hover {
@@ -1196,6 +1224,7 @@ input[type="checkbox"] ~ h3 {
 
 .catalog-paginator {
     font-size: 0;
+    margin-top: 23px;
     margin-bottom: 60px;
 }
 
@@ -1302,12 +1331,15 @@ input[type="checkbox"] ~ h3 {
 
 h1.catalog-title {
     font-family: "Cuprum",sans-serif,Arial;
-    font-weight: 300;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 30px;
     text-transform: uppercase;
-    padding-top: 27.5px;
+    padding-top: 22.5px;
     padding-bottom: 29.5px;
-    padding-left: 30px;
+    padding-left: 26px;
     margin-bottom: 20px;
+    color: #32425c;
     background-color: #f2f6f8;
 }
 
@@ -1698,13 +1730,18 @@ h1.catalog-title {
     float: right;
 }
 
-.catalog-items {
+.catalog-items,
+.market-items {
     font-size: 0;
+}
+
+.market-items {
+
 }
 
 .catalog-item {
     position: relative;
-    display: inline-block;
+    float: left;
     vertical-align: top;
     box-sizing: border-box;
     width: 220px;
@@ -1716,9 +1753,12 @@ h1.catalog-title {
     cursor: pointer;
 }
 
-.catalog-item:last-child {
-    float: right;
-    margin-right: 0;
+.catalog-items .catalog-item:last-child {
+    margin: 0;
+}
+
+.market-items .catalog-item:nth-child(3n) {
+    margin: 0;
 }
 
 .catalog-item:hover {
@@ -1906,7 +1946,7 @@ h1.catalog-title {
 .catalog-item-price {
     position: relative;
     font-family: "PT Sans",sans-serif,Arial;
-    font-size: 14px;
+    font-size: 15px;
     width: 122px;
     padding-top: 10px;
     padding-left: 13px;
@@ -2142,6 +2182,32 @@ h1.catalog-title {
     list-style: none;
 }
 
+.perforators {
+    min-height: 261px;
+    height: 261px;
+    padding-top: 66px;
+    padding-bottom: 68px;
+    background-color: #f2f6f8;
+}
+
+.perforators-title {
+    font-family: "Cuprum", sans-serif, Arial;
+    font-size: 30px;
+    line-height: 30px;
+    font-weight: 400;
+    color: #32425c;
+    text-transform: uppercase;
+    margin-bottom: 25px;
+}
+
+.perforators-about {
+    font-family: "PT Sans", sans-serif, Arial;
+    font-size: 13px;
+    line-height: 24px;
+    font-weight: 400;
+    color: #000000;
+}
+
 footer {
     min-height: 300px;
     color: white;
@@ -2152,9 +2218,16 @@ footer a {
     text-decoration: none;
 }
 
-.footer-top-panel {
+.footer-top-panel,
+.footer-top-panel-catalog {
     min-height: 63px;
     margin-bottom: 17px;
+}
+
+.footer-bottom-panel .footer-top-panel,
+.footer-bottom-panel .footer-top-panel-catalog
+{
+    margin-bottom: 24px;
 }
 
 .footer-middle-panel {
@@ -2241,6 +2314,10 @@ footer a {
     padding-top: 37px;
 }
 
+.footer-top-panel-catalog .footer-panel-navigation-list {
+    padding-top: 44px;
+}
+
 .footer-panel-navigation-list li {
     list-style: none;
     display: inline-block;
@@ -2273,8 +2350,9 @@ footer a {
     color: white;
 }
 
-.footer-bottom-panel {
-    padding-top: 36px;
+.footer-bottom-panel,
+.footer-bottom-panel-catalog {
+    padding-top: 28px;
     height: 108px;
 }
 
@@ -2307,12 +2385,14 @@ footer a {
     font-family: "Cuprum",sans-serif,Arial;
 }
 
-.footer-bottom-panel {
+.footer-bottom-panel,
+.footer-bottom-panel-catalog {
     background: #293449;
 }
 
 .footer-middle-panel p,
-.footer-bottom-panel p {
+.footer-bottom-panel p,
+.footer-bottom-panel-catalog p {
     margin: 0;
     padding: 0;
 }
@@ -2331,7 +2411,16 @@ footer a {
 .footer-panel-copyright {
     float: left;
     width: 233px;
-    margin-right: 162px;
+    margin-right: 156px;
+}
+
+.footer-panel-copyright p {
+    margin: 0;
+    padding: 0;
+}
+
+.footer-panel-copyright:first-child {
+    margin-top: 12px;
 }
 
 .footer-panel-social {
@@ -2346,12 +2435,23 @@ footer a {
     float: left;
     width: 130px;
     margin-right: 51px;
+    margin-top: 11px;
+    margin-left: 8px;
+}
+
+.footer-bottom-panel-catalog .footer-panel-feedback {
+    margin-top: -7px;
 }
 
 .footer-panel-credits {
     float: right;
     width: 100px;
     margin-right: 13px;
+    margin-top: 11px;
+}
+
+.footer-bottom-panel-catalog .footer-panel-credits {
+    margin-top: -8px;
 }
 
 .footer-social-btn {
@@ -2372,7 +2472,7 @@ footer a {
 
 .footer-social-btn::before {
     position: absolute;
-    top: 10px;
+    top: 13px;
     left: 10px;
     font-size: 18px;
     font-family: "symbols-technomart";
@@ -2390,13 +2490,11 @@ footer a {
 
 .footer-social-fb::before {
     content: "\66";
-    top: 10px;
     left: 15px;
 }
 
 .footer-social-in::before {
     content: "\1f4f7";
-    top: 11px;
     left: 14px;
 }
 
