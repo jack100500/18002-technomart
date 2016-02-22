@@ -243,7 +243,9 @@ input[type="search"]:active ~ label::before {
 
 .container {
     width: 940px;
+    padding: 0 10px;
     margin: 0 auto;
+    box-sizing: content-box;
 }
 
 .clearfix::after {
