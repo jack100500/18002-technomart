@@ -297,16 +297,22 @@ header.catalog-header {
 }
 
 .header-top-search label {
+    position: absolute;
+    left: 18px;
+    top: 10px;
+}
+
+.header-top-search label:hover::before {
+    color: #ffffff;
+}
+
+.header-top-search form {
     position: relative;
-    vertical-align: top;
 }
 
 .header-top-search label::before {
     box-sizing: border-box;
-    vertical-align: top;
     position: absolute;
-    top: 11px;
-    left: -183px;
     font-family: "symbols-technomart";
     font-style: normal;
     font-weight: 400;
@@ -618,7 +624,6 @@ header.catalog-header .header-middle-user {
     position: relative;
     display: inline-block;
     vertical-align: top;
-    vertical-align: top;
     margin-left: 16px;
 }
 
@@ -648,11 +653,6 @@ header.catalog-header .header-middle-user {
 
 .header-user-account a:active {
     color: #b7bfc8;
-}
-
-.btn-alt-login:hover::before {
-    color: #ee3643;
-    opacity: 1;
 }
 
 .btn-alt-login:active::before {
@@ -910,7 +910,6 @@ input[type="radio"]:disabled + label {
 }
 
 .breadcrumbs li {
-    vertical-align: top;
     position: relative;
     display: inline-block;
     vertical-align: top;
@@ -1440,6 +1439,7 @@ h1.catalog-title {
 
 .main-navigation-list li {
     display: inline-block;
+    vertical-align: top;
     padding: 18px 15px;
     text-align: center;
 }
@@ -1587,12 +1587,10 @@ h1.catalog-title {
 
 .slider-controls label {
     display: inline-block;
+    vertical-align: top;
     width: 10px;
     height: 10px;
     margin: 0 3px;
-
-    vertical-align: top;
-
     background: white;
     border: 3px solid white;
     border-radius: 50%;
@@ -1876,6 +1874,7 @@ h1.catalog-title {
     font-weight: 400;
     speak: none;
     display: inline-block;
+    vertical-align: top;
     text-decoration: inherit;
     text-align: center;
     font-variant: normal;
@@ -1903,7 +1902,7 @@ h1.catalog-title {
 }
 
 .catalog-item-actions .bookmark:active {
-    border-color: #32425c;
+    border-color: #c1c6ce;
 }
 
 .popular-brands {
@@ -2480,6 +2479,7 @@ footer a {
     margin-right: 107px;
     min-height: 40px;
     font-size: 0;
+    margin-top: 10px;
 }
 
 .footer-panel-feedback {
@@ -2490,10 +2490,6 @@ footer a {
     margin-left: 8px;
 }
 
-.footer-bottom-panel-catalog .footer-panel-feedback {
-    margin-top: -7px;
-}
-
 .footer-panel-credits {
     float: right;
     width: 100px;
@@ -2501,14 +2497,10 @@ footer a {
     margin-top: 11px;
 }
 
-.footer-bottom-panel-catalog .footer-panel-credits {
-    margin-top: -8px;
-}
-
 .footer-social-btn {
     position: relative;
     display: inline-block;
-    vertical-align: middle;
+    vertical-align: top;
     text-decoration: none;
     width: 42px;
     height: 42px;
@@ -2532,6 +2524,7 @@ footer a {
     font-weight: 400;
     speak: none;
     display: inline-block;
+    vertical-align: top;
     text-decoration: inherit;
     text-align: center;
     font-variant: normal;
@@ -2552,6 +2545,7 @@ footer a {
 
 .btn-alt {
     display: inline-block;
+    vertical-align: top;
     font-family: "Cuprum", Arial, sans-serif;
     font-size: 0px;
     line-height: 18px;
@@ -2588,7 +2582,7 @@ footer a {
 .btn-alt-login {
     font-size: 20px;
     position: relative;
-    padding: 14px 27px 15px 48px;
+    padding: 15px 27px 15px 48px;
 }
 
 .btn-alt-registration {
@@ -2598,6 +2592,7 @@ footer a {
 
 .btn {
     display: inline-block;
+    vertical-align: top;
     width: 135px;
     min-height: 38px;
     background-color: rgba(0, 0, 0, 0.1);
@@ -2956,7 +2951,6 @@ textarea:focus,
     line-height: 30px;
     font-weight: 400;
     color: #32425c;
-    /*text-transform: uppercase;*/
     margin-left: 180px;
     margin-bottom: 68px;
 }
@@ -2990,7 +2984,6 @@ textarea:focus,
     color: #fff;
     text-transform: uppercase;
     text-decoration: none;
-    vertical-align: top;
     padding-top: 12px;
     padding-bottom: 9px;
     margin-right: 20px;
